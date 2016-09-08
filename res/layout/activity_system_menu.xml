@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/include_title"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30px"
+        android:paddingRight="30px" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            
+            <LinearLayout
+                android:id="@+id/ll_system_set"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_system_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="系统设置"
+                    android:textSize="@dimen/activity_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_system_test"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical" >
+
+                <View style="@style/view_line" />
+
+                <TextView
+                    android:id="@+id/tv_system_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="系统测试"
+                    android:textSize="@dimen/activity_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_file_manage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical" >
+
+                <View style="@style/view_line" />
+
+                <TextView
+                    android:id="@+id/tv_file_manage"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="文件管理"
+                    android:textSize="@dimen/activity_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_sale_statistic"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical" >
+
+                <View style="@style/view_line" />
+
+                <TextView
+                    android:id="@+id/tv_sale_statistic"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="销售统计"
+                    android:textSize="@dimen/activity_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_goods_set"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical" >
+
+                <View style="@style/view_line" />
+
+                <TextView
+                    android:id="@+id/tv_goods_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="货道管理"
+                    android:textSize="@dimen/activity_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_efficient"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical" >
+
+                <View style="@style/view_line" />
+
+                <TextView
+                    android:id="@+id/tv_efficient"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="节能设置"
+                    android:textSize="@dimen/activity_text_size" />
+            </LinearLayout>
+             <LinearLayout
+                android:id="@+id/ll_fault_info" 
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical" >
+
+                <View style="@style/view_line" />
+
+                <TextView
+                    android:id="@+id/tv_fault_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="故障信息"
+                    android:textSize="@dimen/activity_text_size" />
+                <View style="@style/view_line" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30px"
+            android:text="购物车"
+            android:textColor="@color/black"
+            android:textSize="@dimen/activity_text_size" />
+    </LinearLayout>
+    <View 
+        style="@style/view_line"
+        />
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" >
+    </ListView>
+
+    <View style="@style/view_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="100px" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="130px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总价:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_text_size" />
+
+            <TextView
+                android:id="@+id/tv_main_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥10.00"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_text_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_main_balance"
+            android:layout_width="120px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/red"
+            android:gravity="center"
+            android:text="结算"
+            android:textColor="@color/black"
+            android:textSize="@dimen/activity_text_size" />
+    </RelativeLayout>
+
+</LinearLayout>

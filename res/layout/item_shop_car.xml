@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_item" >
+
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:gravity="center"
+        android:paddingLeft="30px"
+        android:paddingRight="30px" >
+
+        <TextView
+            android:id="@+id/tv_shopcar_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品名称"
+            android:textSize="@dimen/activity_text_size" />
+
+        <LinearLayout
+            android:id="@+id/ll_shopcar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/iv_main_subtract"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:src="@drawable/ic_subtract" />
+
+            <TextView
+                android:id="@+id/tv_main_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:text="0"
+                android:textSize="@dimen/activity_text_size" />
+
+            <ImageView
+                android:id="@+id/iv_main_add"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:src="@drawable/ic_add" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_shopcar_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/ll_shopcar"
+            android:text="商品单价"
+            android:textSize="@dimen/activity_text_size" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30px"
+    android:paddingRight="30px" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+             >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="订单号:"
+                android:textSize="@dimen/activity_text_size" />
+
+            <TextView
+                android:id="@+id/tv_pay_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+ android:layout_gravity="center_vertical"
+                android:text="5000000042016081112345678"
+                android:textSize="@dimen/activity_text_size" />
+        </LinearLayout>
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+             >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="交易状态:"
+                android:textSize="@dimen/activity_text_size" />
+
+            <TextView
+                android:id="@+id/tv_pay_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="5000000042016081112345678"
+                android:textColor="@color/red"
+                android:textSize="@dimen/activity_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+             >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="交易时间:"
+                android:textSize="@dimen/activity_text_size" />
+
+            <TextView
+                android:id="@+id/tv_pay_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="5000000042016081112345678"
+                android:textSize="@dimen/activity_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+             >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="交易方式:"
+                android:textSize="@dimen/activity_text_size" />
+
+            <TextView
+                android:id="@+id/tv_pay_way"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="5000000042016081112345678"
+                android:textSize="@dimen/activity_text_size" />
+        </LinearLayout>
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+             >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="交易金额:"
+                android:textSize="@dimen/activity_text_size" />
+
+            <TextView
+                android:id="@+id/tv_pay_pirce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="5000000042016081112345678"
+                android:textSize="@dimen/activity_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+             >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="客服电话:"
+                android:textSize="@dimen/activity_text_size" />
+
+            <TextView
+                android:id="@+id/tv_pay_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="5000000042016081112345678"
+                android:textSize="@dimen/activity_text_size" />
+        </LinearLayout>
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+             >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="说明:"
+                android:textSize="@dimen/activity_text_size" />
+
+            <TextView
+                android:id="@+id/tv_pay_explain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="5000000042016081112345678"
+                android:textSize="@dimen/activity_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/tv_pay_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/red"
+        android:textSize="@dimen/activity_text_size_large"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="6dp"
+        />
+</RelativeLayout>

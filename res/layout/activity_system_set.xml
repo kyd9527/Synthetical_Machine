@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_title" />
+
+    <ScrollView
+        android:id="@+id/sv_system_set"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:id="@+id/tv_machine_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="机器编号:"
+                    android:textSize="@dimen/activity_text_size" />
+
+                <EditText
+                    android:id="@+id/et_machine_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_machine_number"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:textSize="@dimen/activity_text_size" />
+            </RelativeLayout>
+
+                      <View style="@style/view_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:id="@+id/tv_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="密钥:"
+                    android:textSize="@dimen/activity_text_size" />
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_password"
+                    android:textSize="@dimen/activity_text_size" />
+            </RelativeLayout>
+            
+            <View style="@style/view_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="客服电话:"
+                    android:textSize="@dimen/activity_text_size" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_phone"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:textSize="@dimen/activity_text_size" />
+            </RelativeLayout>
+
+            <View style="@style/view_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_machine"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="机器类型"
+                    android:textSize="@dimen/activity_text_size" />
+
+                <ImageView
+                    android:id="@+id/iv_machine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_chevron_right_black" />
+
+                <TextView
+                    android:id="@+id/tv_machine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/iv_machine"
+                    android:text="弹簧机"
+                    android:textSize="@dimen/activity_text_size" />
+            </RelativeLayout>
+
+            <View style="@style/view_line" />
+            
+            
+            <RelativeLayout
+                android:id="@+id/rl_machine_height"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="机器高度"
+                    android:textSize="@dimen/activity_text_size" />
+
+                <ImageView
+                    android:id="@+id/iv_machine_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_chevron_right_black" />
+
+                <TextView
+                    android:id="@+id/tv_machine_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/iv_machine_height"
+                    android:text="0CM"
+                    android:textSize="@dimen/activity_text_size" />
+            </RelativeLayout>
+
+            <View style="@style/view_line" />
+            
+            
+            <RelativeLayout
+                android:id="@+id/rl_business_time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="营业时间"
+                    android:textSize="@dimen/activity_text_size" />
+
+                <ImageView
+                    android:id="@+id/iv_business_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_chevron_right_black" />
+
+                <TextView
+                    android:id="@+id/tv_business_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/iv_business_time"
+                    android:text="0:00-24:00"
+                    android:textSize="@dimen/activity_text_size" />
+            </RelativeLayout>
+
+            <View style="@style/view_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_screen_model"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="屏幕模式"
+                    android:textSize="@dimen/activity_text_size" />
+
+                 <Switch
+                    android:id="@+id/sw_screen_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textOn="触摸屏"
+                    android:textOff="非触摸屏" />
+            </RelativeLayout>
+
+            <View style="@style/view_line" />
+            
+             <RelativeLayout
+                android:id="@+id/rl_machine_adver"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="广告播放模式"
+                    android:textSize="@dimen/activity_text_size" />
+
+                 <Switch
+                    android:id="@+id/sw_machine_adver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textOn="后台"
+                    android:textOff="SD卡" />
+            </RelativeLayout>
+ <View style="@style/view_line" />
+ <TextView 
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="注：如设置SD卡播放模式，默认读取/sdcard/DCIM/ad_file文件播放"
+     android:textSize="@dimen/activity_text_size_small"
+     />
+            <View style="@style/view_line" />
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="wifi状态:"
+                    android:textSize="@dimen/activity_text_size" />
+
+                <Switch
+                    android:id="@+id/sw_wifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <View style="@style/view_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_wifi_set"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="wifi设置"
+                    android:textSize="@dimen/activity_text_size" />
+
+                <ImageView
+                    android:id="@+id/iv_wifi_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_chevron_right_black" />
+
+                <TextView
+                    android:id="@+id/tv_wifi_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/iv_wifi_set"
+                    android:text="newWifi"
+                    android:textSize="@dimen/activity_text_size" />
+            </RelativeLayout>
+
+            <View style="@style/view_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_coin_machine"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="投币器模式"
+                    android:textSize="@dimen/activity_text_size" />
+
+                <ImageView
+                    android:id="@+id/iv_coin_machine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_chevron_right_black" />
+
+                <TextView
+                    android:id="@+id/tv_coin_machine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/iv_coin_machine"
+                    android:text="松下"
+                    android:textSize="@dimen/activity_text_size" />
+            </RelativeLayout>
+
+            <View style="@style/view_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_light"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="按键灯光模式"
+                    android:textSize="@dimen/activity_text_size" />
+
+                <ImageView
+                    android:id="@+id/iv_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_chevron_right_black" />
+
+                <TextView
+                    android:id="@+id/tv_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/iv_light"
+                    android:text="自动"
+                    android:textSize="@dimen/activity_text_size" />
+            </RelativeLayout>
+
+            <View style="@style/view_line" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

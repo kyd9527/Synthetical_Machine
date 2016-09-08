@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:id="@+id/layout_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/text_pay_type"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/goods_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/goods_image" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_total_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_until_price_0"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/layout_image"
+        android:text="数量"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dip"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/text_unit_quantity"
+        android:layout_toRightOf="@+id/text_total_quantity"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.kyd.vendingmachine.customview.WheelView
+            android:id="@+id/select_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </com.kyd.vendingmachine.customview.WheelView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_unit_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_until_price_0"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/text_price"
+        android:text="个"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_until_price_0"
+        android:layout_toLeftOf="@+id/goods_price"
+        android:text="单价"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_until_price_0"
+        android:layout_toLeftOf="@+id/text_until_price_0"
+        android:ems="4"
+        android:gravity="center"
+        android:text="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:id="@+id/text_until_price_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:text="元"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/goods_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_until_price_2"
+        android:layout_toLeftOf="@+id/text_until_price_1"
+        android:layout_toRightOf="@+id/text_total_price"
+        android:ems="4"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:id="@+id/text_until_price_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/text_until_price_2"
+        android:layout_alignLeft="@id/text_unit_quantity"
+        android:layout_toRightOf="@+id/text_total_price"
+        android:text="元"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/text_pad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_until_price_2"
+        android:layout_alignLeft="@id/text_price"
+        android:text="已付金额"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/goods_pad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_until_price_2"
+        android:layout_alignRight="@+id/goods_price"
+        android:layout_toRightOf="@+id/text_pad"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:id="@+id/text_until_price_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/text_until_price_0"
+        android:layout_marginTop="180dp"
+        android:text="元"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/text_pay_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/wxpay_button"
+        android:layout_alignParentLeft="true"
+        android:text="请选择支付方式"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+    <ImageButton
+        android:id="@+id/wxpay_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button__back"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/wxpay_icon" />
+
+    <ImageButton
+        android:id="@+id/alipay_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/wxpay_button"
+        android:layout_toRightOf="@+id/wxpay_button"
+        android:src="@drawable/alipay_icon" />
+
+    <ImageButton
+        android:id="@+id/cashpay_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button__back"
+        android:layout_toRightOf="@+id/alipay_button"
+        android:src="@drawable/cashpay_icon_big" />
+
+    <Button
+        android:id="@+id/button__back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="返回" />
+
+    <TextView
+        android:id="@+id/text_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ff0000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/text_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/goods_total_price"
+        android:layout_alignBottom="@+id/goods_total_price"
+        android:layout_alignLeft="@+id/text_total_quantity"
+        android:text="应付金额"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/text_goods_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/layout_image"
+        android:layout_below="@+id/layout_image"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+</RelativeLayout>

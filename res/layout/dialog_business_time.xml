@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+       android:orientation="horizontal"
+        >
+        <TextView 
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:text="开始时间"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/activity_text_size"
+            />
+        <View style="@style/view_line_vertical"/>
+        <TextView 
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:text="结束时间"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/activity_text_size"
+            />
+    </LinearLayout>
+    <View style="@style/view_line"/>
+    
+    <LinearLayout 
+              android:layout_width="match_parent"
+        android:layout_height="50dp"
+       android:orientation="horizontal"
+        >
+        <LinearLayout 
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+             android:orientation="horizontal"
+            >
+            <EditText 
+                android:id="@+id/et_start_time_hour"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="："
+                />
+            <EditText 
+                android:id="@+id/et_start_time_second"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+         <TextView 
+             android:layout_height="match_parent"
+             android:layout_width="wrap_content"
+             android:gravity="center"
+             android:text="——"/>
+          <LinearLayout 
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+             android:orientation="horizontal"
+            >
+            <EditText 
+                android:id="@+id/et_end_time_hour"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="："
+                />
+            <EditText 
+                android:id="@+id/et_end_time_second"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+    </LinearLayout>
+     <View style="@style/view_line"/>
+     <TextView 
+         android:id="@+id/tv_note"
+         android:layout_marginLeft="10dp"
+         android:layout_width="wrap_content"
+         android:layout_height="20dp"
+         android:text="注:0：00-24:00为24小时营业"
+         android:gravity="center_vertical"
+         android:textSize="12dp"
+         />
+     <View style="@style/view_line"/>
+     <LinearLayout 
+          android:layout_width="match_parent"
+        android:layout_height="40dp"
+       android:orientation="horizontal"
+         >
+         <Button 
+             android:id="@+id/bt_confirm"
+             android:layout_width="0px"
+             android:layout_height="match_parent"
+             android:text="确定"
+             android:layout_weight="1"
+             android:background="@color/white"
+             android:textSize="@dimen/activity_text_size"
+             />
+         <View style="@style/view_line_vertical"/>
+         <Button 
+             android:id="@+id/bt_cancel"
+             android:layout_width="0px"
+             android:layout_height="match_parent"
+             android:text="取消"
+             android:textSize="@dimen/activity_text_size"
+             android:layout_weight="1"
+              android:background="@color/white"
+             />
+     </LinearLayout>
+     <View style="@style/view_line"/>
+</LinearLayout>

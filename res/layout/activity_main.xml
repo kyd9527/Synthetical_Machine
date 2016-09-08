@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8px"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radius_gridview"
+                android:orientation="horizontal"
+                android:paddingBottom="5px"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:paddingTop="5px" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="机器编号:"
+                    android:textSize="@dimen/activity_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_machine_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/activity_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/radius_gridview"
+                android:orientation="horizontal"
+                android:paddingBottom="5px"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:paddingTop="5px" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="左室温度:"
+                    android:textSize="@dimen/activity_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_temp_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/activity_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/radius_gridview"
+                android:orientation="horizontal"
+                android:paddingBottom="5px"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:paddingTop="5px" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="右室温度:"
+                    android:textSize="@dimen/activity_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_temp_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/activity_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/radius_gridview"
+                android:orientation="horizontal"
+                android:paddingBottom="5px"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:paddingTop="5px" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="时间:"
+                    android:textSize="@dimen/activity_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_machine_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/activity_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/radius_gridview"
+                android:orientation="horizontal"
+                android:paddingBottom="5px"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:paddingTop="5px" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="服务电话:"
+                    android:textSize="@dimen/activity_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_machine_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/activity_text_size" />
+            </LinearLayout>
+            
+             <LinearLayout
+                android:id="@+id/ll_main_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/radius_gridview"
+                android:orientation="horizontal"
+                android:paddingBottom="5px"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:paddingTop="5px" >
+
+                <TextView
+                    android:id="@+id/tv_main_return"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="返回"
+                    android:textSize="@dimen/activity_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1" >
+
+            <ListView
+                android:id="@+id/lv"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" >
+            </ListView>
+
+            <View style="@style/view_line_vertical" />
+
+            <ScrollView
+                android:id="@+id/sv"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5" >
+
+                <com.kyd.springmachine.widget.MyGridView
+                    android:id="@+id/gv_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#e2e2e2"
+                    android:columnWidth="280px"
+                    android:horizontalSpacing="10px"
+                    android:numColumns="auto_fit"
+                    android:paddingLeft="10px"
+                    android:paddingRight="10px"
+                    android:paddingTop="10px"
+                    android:verticalSpacing="10px" >
+                </com.kyd.springmachine.widget.MyGridView>
+            </ScrollView>
+        </LinearLayout>
+
+        <View style="@style/view_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_main"
+            android:layout_width="match_parent"
+            android:layout_height="100px" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="130px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总价:"
+                    android:textSize="@dimen/activity_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_main_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥0.00"
+                    android:textSize="@dimen/activity_text_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_main_balance"
+                android:layout_width="120px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/red"
+                android:gravity="center"
+                android:text="结算"
+                android:textSize="@dimen/activity_text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_main_shopcar"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_shopcar" />
+    
+    <RelativeLayout 
+        android:id="@+id/ll_main_closing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ee333333"
+        >
+        
+    <ImageView
+        android:id="@+id/iv_main_closing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+         />
+    </RelativeLayout>
+
+</RelativeLayout>

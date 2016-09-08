@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp" >
+
+        <TextView
+            android:id="@+id/tv_road_number"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="@dimen/activity_text_size" />
+
+        <TextView
+            android:id="@+id/tv_road_state"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="无货"
+            android:textSize="@dimen/activity_text_size" />
+
+        <TextView
+            android:id="@+id/tv_road_fault"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="故障"
+            android:textSize="@dimen/activity_text_size" />
+    </LinearLayout>
+
+</LinearLayout>
